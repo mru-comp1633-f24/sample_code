@@ -1,0 +1,30 @@
+# Ignore all
+*
+
+# Unignore everything with an extension
+!*.*
+
+# except for .out files and .o
+*.out
+*.o
+
+# Unignore all dirs and subdirs
+!/**/
+
+# Unignore .gitignore
+!.gitignore
+
+# And makefiles
+!makefile
+!Makefile
+
+# emacs stuff
+*~
+\#*\#
+.\#*
+
+# gtest stuff
+*.da
+*.gc*
+*.bb
+*.bbg
