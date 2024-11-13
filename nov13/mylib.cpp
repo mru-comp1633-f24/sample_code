@@ -57,13 +57,9 @@ void remove(Node *&head, int value) {
             
 void print(Node *head) {
     Node *current = head;
-    cout << '[';
     while (current) {
-        cout << current->data;
-        if (current->next) {
-            cout << ", ";
-        }
+        cout << current->data << ' ';
         current = current->next;
     }
-    cout << "]\n";
+    cout << endl;
 }

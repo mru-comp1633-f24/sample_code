@@ -40,6 +40,14 @@ int main() {
 
     remove(head, 100); // remove non-existant
     print(head);
+
+    // clean up memory
+    Node *current = head;
+    while (current) {
+        Node *to_delete = current;
+        current = current->next;
+        delete to_delete;
+    }
     
     return 0;
 }
