@@ -22,4 +22,6 @@ private:
     int seconds;
 };
 
+std::ostream &operator<<(std::ostream &out, const Time &t);
+
 #endif // MYLIB_H

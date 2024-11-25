@@ -45,3 +45,8 @@ bool Time::operator==(const Time &other) const {
         && minutes == other.minutes
         && seconds == other.seconds;
 }
+
+std::ostream &operator<<(std::ostream &out, const Time &t) {
+    t.write(out);
+    return out;
+}

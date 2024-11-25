@@ -8,14 +8,11 @@ int main() {
     Time *later = new Time();
 
     delete later;
-    
-    bedtime.write(cout);
 
-    // cout << bedtime << endl;
+    cout << "It's : " << bedtime << endl;
     
     cout << endl;
     bedtime.increment();
-    bedtime.write(cout);
     cout << endl;
 
     if (now == bedtime) {
